@@ -8,6 +8,6 @@ bot.hears( 'get',(ctx) => getSchedule(ctx.message.text).then(result => {
         ctx.reply(result);
 }).catch(() => ctx.reply('Error occured')));
 
-bot.telegram.setWebhook('https://bot.sot00.now.sh');
+bot.telegram.setWebhook('https://sheduiebot.sot00.now.sh');
 
 module.exports = bot.webhookCallback('/');
