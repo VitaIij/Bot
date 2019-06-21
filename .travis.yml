@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "11"
+cache:
+  - npm
+before_script:
+  - npm ci
+script: 
+  - npm run lint
+  - npm run test
+  - npm run deploy
+  - now --token=$now_proxy_token
